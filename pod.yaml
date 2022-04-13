@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  generateName: pants-
+spec:
+  containers:
+    - name: pants
+      #image: ubuntu
+      #command: ["bash", "-c", "echo HI"]
+      image: python:3.9.6
+      command: ["bash", "-c", "git clone https://github.com/abugov/example-jvm.git && cd example-jvm && ./pants --no-watch-filesystem --no-pantsd check ::"]

@@ -32,8 +32,8 @@ args = [
 
 # Configure the specific Scala version to use for a resolve. This version must match the version used for the
 # `jvm_artifact` target providing the scala-library runtime jar.
-[scala.version_for_resolve]
-"jvm-default" = "2.13.8"
+#[scala.version_for_resolve]
+#"jvm-default" = "2.13.8"
 
 [scalac]
 args = [
