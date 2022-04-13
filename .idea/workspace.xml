@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="84f4efcd-b201-4807-9f01-c5239ceb3cab" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pod.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pod.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +44,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649684263502</updated>
-      <workItem from="1649684265768" duration="17367000" />
+      <workItem from="1649684265768" duration="17685000" />
     </task>
     <servers />
   </component>
