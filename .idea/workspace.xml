@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84f4efcd-b201-4807-9f01-c5239ceb3cab" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/docker-image.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/docker-image.yml" afterDir="false" />
-    </list>
+    <list default="true" id="84f4efcd-b201-4807-9f01-c5239ceb3cab" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +41,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649684263502</updated>
-      <workItem from="1649684265768" duration="11512000" />
+      <workItem from="1649684265768" duration="11837000" />
     </task>
     <servers />
   </component>
