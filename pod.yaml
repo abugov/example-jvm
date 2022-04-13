@@ -11,4 +11,4 @@ spec:
       #command: ["bash", "-c", "echo HI"]
       image: ghcr.io/abugov/pants-example-jvm:main
       imagePullPolicy: Always
-      command: ["bash", "-c", "cd example-jvm && git pull && ./pants check ::"]
+      command: ['bash', '-c', 'echo "build date: `cat /builddate`" && cd example-jvm && git pull && ./pants check ::'']
