@@ -7,12 +7,24 @@ on:
     branches: [ main ]
 
 jobs:
-
-  build:
-
+  push_to_registry:
+    name: Push Docker image to GitHub Packages
     runs-on: ubuntu-latest
-
+    permissions:
+      packages: write
+      contents: read
     steps:
-    - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      - name: Check out the repo
+        uses: actions/checkout@v3
+
+      - name: Log in to GitHub Docker Registry
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          
+      - name: Build and push
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          tags: user/app:${{ github.sha }}
