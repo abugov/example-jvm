@@ -3,9 +3,12 @@ kind: Pod
 metadata:
   generateName: pants-
 spec:
+  imagePullSecrets:
+    - name: docker-registry-cred # create using ~/github/abugov/research/playground/k8s/scripts/create_image_pull_secret.sh
   containers:
     - name: pants
       #image: ubuntu
       #command: ["bash", "-c", "echo HI"]
-      image: python:3.9.6
-      command: ["bash", "-c", "git clone https://github.com/abugov/example-jvm.git && cd example-jvm && ./pants --no-watch-filesystem --no-pantsd check ::"]
+      image: ghcr.io/abugov/pants-example-jvm:main
+      imagePullPolicy: Always
+      command: ["bash", "-c", "cd example-jvm && git pull && ./pants check ::"]
