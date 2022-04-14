@@ -3,6 +3,7 @@ kind: Pod
 metadata:
   generateName: pants-
 spec:
+  restartPolicy: Never
   imagePullSecrets:
     - name: docker-registry-cred # create using ~/github/abugov/research/playground/k8s/scripts/create_image_pull_secret.sh
   containers:
