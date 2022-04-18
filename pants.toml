@@ -55,5 +55,5 @@ debug_args = [
 ]
 
 [anonymous-telemetry]
-enabled = true
+enabled = false
 repo_id = "79B3C35A-85A9-41A4-AAA8-04484F41A8F7"
